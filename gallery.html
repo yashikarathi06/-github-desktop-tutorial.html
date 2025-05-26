@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - My Photography Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<style>
+    body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#f9f1f5;
+    color:#121212; 
+    line-height: 1.6;
+    }
+
+    header {
+    background-color: #c87e7e; 
+    color: #f2e6e6; 
+    text-decoration: #635b5b;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fde8e8;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00; 
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+    .gallery-section {
+    background-image: url('https://i.pinimg.com/736x/01/54/00/015400dc325ba085713daab8ecf859b1.jpg');
+    background-position: center;
+    color: #3f3a3a;
+    padding: 13rem 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #c87e7e; 
+    color: rgb(250, 239, 239); 
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+
+</header>
+    <header>
+        <div class="logo">A Marvellous Gallery</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="gallery-section">
+        <h2>Gallery of Beauty</h2>
+        <div class="gallery">
+            <img src="https://cdn.pixabay.com/photo/2020/02/28/05/23/aesthetic-4886533_960_720.jpg" alt="Image 1">
+            <img src="https://wallpapers.com/images/featured/spring-aesthetic-pictures-zbe2lbw6jdrj9oxq.jpg" alt="Image 2">
+            <img src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2019/09/shutterstock_1396068722.jpg" alt="Image 3">
+            <img src="https://i.pinimg.com/236x/62/2f/37/622f371adacf639fb488e7dc3ca823ce.jpg" alt="Image 4">
+            <img src="https://i.pinimg.com/736x/44/a1/aa/44a1aad1c3a66beae5c86ec96fe29928.jpg" alt="Image 5">
+            <img src="https://i.pinimg.com/1200x/0b/9a/13/0b9a13919760215ad5617beb2500cd18.jpg" alt="Image 6">
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yashika Rathi's Collection📷</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My Photography Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<style>
+
+body{
+    background-image: url('https://i.pinimg.com/736x/9f/fc/84/9ffc84226d51ca96f0d9c7d395f12b96.jpg');
+    background-position: center;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#4a725f;
+    color:#121212; 
+    line-height: 1.6;
+    }
+
+    header {
+    background-color: #614b5b; /* Dark Background */
+    color: #fff; /* White Text */
+    padding: 2rem 4rem;
+    display: flex;
+    margin:0;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .contact-section {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section p {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffcc00; /* Yellow Accent Color */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-section .button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00; /* Yellow Accent Color */
+    color: #222; /* Dark Text */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.contact-section .button:hover {
+    background-color: #e6b800; 
+}
+
+footer {
+    background-color: #614b5b; 
+    color: #fff; 
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">YR's Photographic Collection</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Feel free to reach out for inquiries, collaborations, or just to say hello.</p>
+        <form action="#" method="POST"> <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="button">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Yashika Rathi's Collection📷</p>
+    </footer>
+</body>
+</html>
